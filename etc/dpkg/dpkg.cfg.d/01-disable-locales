@@ -1,0 +1,6 @@
+#
+# Disables locales
+#
+
+# Delete locales
+path-exclude=/usr/share/locale/*
