@@ -4,3 +4,6 @@
 
 # Delete locales
 path-exclude=/usr/share/locale/*
+
+# Generate only the following locales
+post-invoke=/usr/sbin/locale-gen --purge de_DE.UTF-8 en_US.UTF-8
