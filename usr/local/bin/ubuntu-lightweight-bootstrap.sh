@@ -1,2 +1,2 @@
 #!/bin/bash
-apt-get remove -y --purge accountservice language-selector-common;
+apt-get remove -y --purge accountsservice language-selector-common;
