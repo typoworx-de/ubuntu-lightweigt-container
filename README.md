@@ -6,5 +6,5 @@ Aim's to provide some configurations helping to provide a lightweight ubuntu - f
 - localepurge
 
 ## Package-Removal/Purge (for non-gui systems)
-- accountservice
+- accountsservice
 - language-selector-common
