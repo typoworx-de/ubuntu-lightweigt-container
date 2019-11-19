@@ -4,3 +4,7 @@ Aim's to provide some configurations helping to provide a lightweight ubuntu - f
 ## Recommended Ubuntu-Packages
 - aptitude
 - localepurge
+
+## Package-Removal/Purge (for non-gui systems)
+- accountservice
+- language-selector-common
