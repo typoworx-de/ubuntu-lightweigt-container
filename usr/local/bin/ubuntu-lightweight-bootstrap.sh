@@ -11,3 +11,6 @@ if [[ $(grep -c 'Debian' /etc/issue) > 0 ]];
 then
   apt-get remove -y --purge accountsservice language-selector-common;
 fi
+
+# Generic packages assumed essential
+apt-get install curl apt-transport-https;
