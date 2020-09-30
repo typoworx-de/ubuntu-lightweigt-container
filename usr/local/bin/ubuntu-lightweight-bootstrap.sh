@@ -9,7 +9,7 @@ fi
 # Check for Debian Linux
 if [[ $(grep -c 'Debian' /etc/issue) > 0 ]];
 then
-  apt-get remove -y --purge accountsservice language-selector-common;
+  apt-get remove -y --purge accountsservice language-selector-common ubuntu-standard;
 fi
 
 # Generic packages assumed essential
