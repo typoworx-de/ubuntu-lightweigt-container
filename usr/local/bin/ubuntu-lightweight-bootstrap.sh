@@ -16,3 +16,8 @@ apt-get remove -y --purge ubuntu-standard;
 
 # Generic packages assumed essential
 apt-get install -y curl apt-transport-https;
+
+# Clean-Up /etc/fstab formatting
+cat /etc/fstab | sed -r 's/\s+/ /g' | column -t -s' ' > /etc/fstab~ \
+&& cp /etc/fstab /etc/fstab~bak \
+&& mv /etc/fstab~ /etc/fstab
