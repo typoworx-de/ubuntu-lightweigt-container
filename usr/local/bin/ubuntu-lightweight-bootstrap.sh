@@ -15,4 +15,4 @@ fi
 apt-get remove -y --purge ubuntu-standard;
 
 # Generic packages assumed essential
-apt-get install curl apt-transport-https;
+apt-get install -y curl apt-transport-https;
