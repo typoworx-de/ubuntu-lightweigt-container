@@ -5,5 +5,5 @@
 # Delete locales
 path-exclude=/usr/share/locale/*
 
-# Generate only the following locales
-post-invoke=/usr/sbin/locale-gen --purge de_DE.UTF-8 en_US.UTF-8
+# Generate only the following locales, avoid broken dpkg if locale-gen doesn't exist
+post-invoke=test -x /usr/sbin/locale-gen && /usr/sbin/locale-gen --purge de_DE.UTF-8 en_US.UTF-8 || true
