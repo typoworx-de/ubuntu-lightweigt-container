@@ -1,5 +1,9 @@
 #!/bin/bash
 
+apt update || exit 1;
+
+apt-get install apt-get;
+
 # Check for VMware Hypervisor
 if [[ $(dmesg | grep -c 'VMware') > 0 ]];
 then
