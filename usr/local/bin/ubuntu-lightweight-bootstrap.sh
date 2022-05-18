@@ -22,9 +22,11 @@ apt-get remove -y --purge ubuntu-standard;
 apt-get install -y curl apt-transport-https;
 
 # Clean-Up /etc/fstab formatting
-cat /etc/fstab | sed -r 's/\s+/ /g' | column -t -s' ' > /etc/fstab~ \
-&& cp /etc/fstab /etc/fstab~bak \
-&& mv /etc/fstab~ /etc/fstab
+#cat /etc/fstab | sed -r 's/\s+/ /g' | column -t -s' ' > /etc/fstab~ \
+#&& cp /etc/fstab /etc/fstab~bak \
+#&& mv /etc/fstab~ /etc/fstab
 
+apt-get update
+apt-get upgrade -y
 apt-get autoremove
 apt-get clean
