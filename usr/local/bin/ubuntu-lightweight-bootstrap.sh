@@ -25,3 +25,6 @@ apt-get install -y curl apt-transport-https;
 cat /etc/fstab | sed -r 's/\s+/ /g' | column -t -s' ' > /etc/fstab~ \
 && cp /etc/fstab /etc/fstab~bak \
 && mv /etc/fstab~ /etc/fstab
+
+apt-get autoremove
+apt-get clean
