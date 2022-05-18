@@ -30,3 +30,7 @@ apt-get update
 apt-get upgrade -y
 apt-get autoremove
 apt-get clean
+
+# Create new host-keys
+rm -f /etc/ssh/ssh_host_* || true
+dpkg-reconfigure openssh-server
