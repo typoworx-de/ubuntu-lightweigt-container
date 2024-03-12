@@ -50,4 +50,4 @@ dpkg-reconfigure openssh-server
 
 # Beautify /etc/fstab by tabbed-format
 [ ! -f /etc/fstab.dist ] && cp /etc/fstab /etc/fstab.dist;
-cat < /etc/fstab | awk '/^#/ && !/# <file system>/ { next } NF == 0 { next } {gsub(/<\s+/, "<", $0)}; { printf "%-20s%-20s%-20s%-10s%-10s%-20s\n", $1, $2, $3, $4, $5, $6 }' | tee /etc/fstab;
+#-cat < /etc/fstab | awk '/^#/ && !/# <file system>/ { next } NF == 0 { next } {gsub(/<\s+/, "<", $0)}; { printf "%-20s%-20s%-20s%-10s%-10s%-20s\n", $1, $2, $3, $4, $5, $6 }' | tee /etc/fstab;
